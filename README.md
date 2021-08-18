@@ -1,9 +1,12 @@
-- 👋 Hi, I’m Mohammed Faiz Abdul Azeez
-- 👨‍🎓 I’m Cs Engineer 2020 Graduate..
-- 👨‍💻 I’m Web Developer and Graphic Designer ...
+# js-music-player
+This is a simple User Interface of a music player created in HTML, CSS and JavaScript.
 
+![Output](/output/html-css.png)
 
-<!---
-I fell in love with the tech world and coding only since a few months. 
-Ever since, this is what I have been doing. I am always determined to learn new stuff and that absolutely excites me. It always fascinated me how these things are built on the internet and cut to today, I am a part of this world.
---->
+## Running the player
+
+The index.html file can be run on any modern browser to run the music player.
+
+## Adding more tracks
+
+The tracks are currently being loaded from the tracklist array specified in main.js. More tracks can be added by adding the details of each track as an object to the tracklist.

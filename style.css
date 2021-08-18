@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: linear-gradient(120deg, #130f40, #4834d4, #8344ad);
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.player {
+  background: #000;
+  width: 450px;
+  height: 730px;
+  position:absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff012f;
+  border-radius: 10px;
+  box-shadow: 1px 1px 30px #111, -1px -1px 30px #111;
+  overflow: hidden;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.icons a {
+  color: #ff012f;
+  font-size: 1.2em;
+  transition: all 0.3s;
+}
+
+.icons a:hover {
+  color: #fff;
+}
+
+.img {
+  box-shadow: 1px 1px 15px #ff012f, -1px -1px 15px #ff012f;
+  width: 80%;
+  border-radius: 60%;
+  margin: 30px auto;
+  transition: all 0.3s;
+}
+
+.img img {
+  border-radius: 60%;
+  cursor: pointer;
+}
+
+.img:hover {
+  box-shadow: 1px 1px 25px #ff012f, -1px -1px 25px #ff012f;
+  transform: scale(1.03);
+}
+.title {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.title h1 {
+  font-size: 1.6em;
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+
+.title p {
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.time {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.seek {
+  width: 100%;
+  height: 5px;
+  background: #ff012f;
+  border-radius: 50px;
+}
+.seek .fill {
+  width: 0;ds
+  height: 5px;
+  background: #fff;
+  border-radius: 50px;
+}
+
+.buttons {
+  margin: 40px auto;
+  height: 350px;
+  width: 100%;
+  border-radius: 48%;
+  text-align: center;
+}
+
+.buttons a:hover {
+  color: #aaa;
+}
+
+.button {
+  padding: 45px 0 30px 0;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: 			#2F4F4F;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+@media screen and (max-width : 500px){
+.player{
+width : 90%;
+max-width : 90%;
+}
+}
+
+body {
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 30px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 0px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
